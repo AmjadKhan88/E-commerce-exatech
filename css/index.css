@@ -124,27 +124,182 @@
 /* ======feature category ===== */
 .feature-category div {
     max-width: 1200px;
+    margin: 150px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.feature-category div img {
+    height: 40px;
+    width: auto;
+}
+
+
+/* ======= promotion style ======  */
+.promotion {
+    margin: 200px auto;
+    max-width: 1200px;
+}
+
+.promotion .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotion .top h2 {
+    color: rgba(0, 26, 255, 0.808);
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 2px gray;
+    margin-bottom: 30px;
+}
+
+.promotion .top h1 {
+    font-size: 44px;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 2px gray;
+    margin-bottom: 50px;
+}
+
+.promotion .promotion-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.promotion-container .promo-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promotion-container .promo-left .promo-card-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cbd5e1;
+    padding-left: 20px;
+    border-radius: 8px;
+}
+
+.promotion-container .promo-left .promo-card-1  img {
+    height: 100%;
+}
+
+
+.promotion-container .promo-left .promo-card-1 span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.promo-card-1 span b {
+    font-size: 22px;
+}
+
+.promo-left .promo-card-1 p {
+ font-size: 16px;
+ margin-top: 15px;
+}
+
+.promo-left .promo-card-2 {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.promo-left .promo-card-2 h1 {
+    letter-spacing: 4px;
+}
+
+.promo-left .promo-card-2 p {
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.promo-left .promo-card-2 button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cbd5e1;
+}
+
+.promo-right {
     display: flex;
     gap: 20px;
 }
 
+.promo-right .promo-right-card-1 {
+    padding: 30px 20px 0px 20px;
+    background-color: #cbd5e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+}
 
+.promo-right .promo-right-card-1 span {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
 
+.promo-right .promo-right-card-1 p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    gap: 20px;
+}
 
+.promo-right .promo-right-card-1.color-orange {
+    background-color: #fce7f3;
+}
+    /* ── large screen ── */
+@media (max-width: 1024px) {
+    .promotion .promotion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    }
 
+    .promotion .promo-right-card-1 {
+        width: 100%;
+    }
 
+    .hero-section {
+        padding: 20px;
+    }
 
-
-
-
+    .feature-category div {
+    justify-content: center;
+    }
+}
 
         /* ── Small tablets ── */
 @media (max-width: 768px) {
+   
+    .promo-right {
+        flex-direction: column;
+        max-width: 99%;
+        margin: 0 auto;
+    }
     .hero-section {
         grid-template-columns: 1fr;
         gap: 40px;
         text-align: center;
-        margin: 30px auto;
+        margin: 100px auto;
+        padding: 10px;
     }
 
     .hero-section .left-side {
@@ -168,6 +323,10 @@
         max-width: 100%;
     }
 
+   .hero-section .right-side {
+        display: none;
+    }
+
     .hero-section .left-side button {
         font-size: 20px;
         padding: 14px 32px;
@@ -180,6 +339,18 @@
 
     .hero-section .right-side img {
         margin-top: -20px;
+    }
+
+    .feature-category div {
+        max-width: 1200px;
+        margin: 150px auto;
+        display: flex;
+        gap:15px;
+    }
+
+    .feature-category div img {
+        height: 30px;
+        width: auto;
     }
 }
 
