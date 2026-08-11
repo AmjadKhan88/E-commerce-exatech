@@ -1,3 +1,6 @@
+
+
+/* ── hero section ── */
 .hero-section {
     margin: 50px auto;
     max-width: 1200px;
@@ -25,7 +28,8 @@
 
 .hero-section .left-side h1 {
     font-size: 76px;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px var(--black-color);
+    line-height: 1.1;
 }
 
 .hero-section .left-side p {
@@ -33,6 +37,7 @@
     font-weight: 500;
     line-height: 30px;
     color: var(--gray-color);
+    max-width: 90%;
 }
 
 .hero-section .left-side button {
@@ -44,21 +49,197 @@
     background-color: rgba(0, 0, 0, 0.87);
     color: var(--white-color);
     border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.25s;
+}
+
+.hero-section .left-side button:hover {
+    background-color: var(--black-color);
 }
 
 .hero-section .right-side {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .hero-section .right-side div {
     max-width: 550px;
     max-height: 550px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     background-color: #fce7f3;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
 }
 
 .hero-section .right-side img {
+    width: 110%;
+    height: 110%;
+    /* object-fit: contain; */
     margin-top: -50px;
+    display: block;
+}
+
+        /* ── Tablet size ── */
+ @media (max-width: 1024px) {
+    .hero-section {
+        gap: 50px;
+    }
+
+    .hero-section .left-side h1 {
+        font-size: 56px;
+    }
+
+    .hero-section .left-side p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 100%;
+    }
+
+    .hero-section .left-side span {
+        font-size: 20px;
+        padding: 8px 18px;
+    }
+
+    .hero-section .left-side button {
+        font-size: 20px;
+        padding: 12px 28px;
+    }
+
+    .hero-section .right-side div {
+        max-width: 420px;
+        max-height: 420px;
+    }
+
+    .hero-section .right-side img {
+        margin-top: -30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ── Small tablets ── */
+@media (max-width: 768px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .hero-section .left-side {
+        align-items: center;
+        gap: 24px;
+    }
+
+    .hero-section .left-side span {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .hero-section .left-side h1 {
+        font-size: 44px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-section .left-side p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 100%;
+    }
+
+    .hero-section .left-side button {
+        font-size: 20px;
+        padding: 14px 32px;
+    }
+
+    .hero-section .right-side div {
+        max-width: 380px;
+        max-height: 380px;
+    }
+
+    .hero-section .right-side img {
+        margin-top: -20px;
+    }
+}
+
+    /* ── Phones ── */
+ @media (max-width: 480px) {
+    body {
+        padding: 0 16px;
+    }
+
+    .hero-section {
+        gap: 30px;
+        margin: 20px auto;
+    }
+
+    .hero-section .left-side {
+        gap: 16px;
+    }
+
+    .hero-section .left-side span {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+
+    .hero-section .left-side h1 {
+        font-size: 32px;
+    }
+
+    .hero-section .left-side p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .hero-section .left-side button {
+        font-size: 16px;
+        padding: 12px 24px;
+        border-radius: 10px;
+    }
+
+    .hero-section .right-side div {
+        max-width: 260px;
+        max-height: 260px;
+    }
+
+    .hero-section .right-side img {
+        margin-top: -12px;
+    }
+}
+
+        /* ── Very small phones ── */
+@media (max-width: 360px) {
+    .hero-section .left-side h1 {
+        font-size: 26px;
+    }
+
+    .hero-section .left-side p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .hero-section .right-side div {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .hero-section .right-side img {
+        margin-top: -8px;
+    }
 }
