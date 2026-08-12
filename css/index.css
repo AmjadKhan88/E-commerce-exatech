@@ -665,26 +665,7 @@
         text-align: center;
     }
 
-    .nav-cart {
-        padding: 8px;
-    }
 
-    .nav-cart i {
-        font-size: 1rem;
-    }
-
-    .nav-cart span {
-        padding: 2px 4px;
-        font-size: 12px;
-    }
-
-    .navbar {
-        height: 110px;
-    }
-
-    .nav-links {
-        top: 72px;
-    }
 
     .feature-category div {
         margin: 0 auto;

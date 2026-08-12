@@ -38,9 +38,7 @@ a:hover {
 
  /* navbar sectin  */
 
- .navabr-section {
-    position: relative;
- }
+ 
 
 .navbar {
     max-width: 1200px;
@@ -56,6 +54,7 @@ a:hover {
     height: 100px;
     position: relative;
     transition: all 0.3s ease;
+    z-index: 100;
 }
 
 .brand {
@@ -545,6 +544,11 @@ html {
     .nav-links {
         top: 72px;
     }
+
+
+
+
+
 }
 
 @media (max-width: 500px) {
