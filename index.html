@@ -15,48 +15,64 @@
 <body>
 
     <!-- ====== NAVBAR ====== -->
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <section class="navabr-section" style="overflow-x: hidden;">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
 
-        <!-- Logo -->
-        <div class="brand">
-            <i class="fa-solid fa-o"></i>
-            Dine Market
-        </div>
-
-        <!-- Nav Links -->
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#">Female</a></li>
-            <li><a href="#">Male </a></li>
-            <li><a href="#">Kids </a></li>
-            <li><a href="#">All Products </a></li>
-        </ul>
-
-        <div style="display: flex; gap: 30px;">
-            <!-- cart icon -->
-            <div class="nav-cart">
-                <i class="fa-solid fa-cart-plus"></i>
-                <span>0</span>
-                <!-- <div class="cart-details">
-
-                </div> -->
+            <!-- Logo -->
+            <div class="brand">
+                <i class="fa-solid fa-o"></i>
+                Dine Market
             </div>
 
-            <!-- Login / Register -->
-            <div class="auth">
-                <span><a href="/pages/login.html" style="text-decoration: none; color: black;">Login</a></span>
-                <span class="divider">/</span>
-                <span>Register</span>
+            <!-- Nav Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Female</a></li>
+                <li><a href="#">Male </a></li>
+                <li><a href="#">Kids </a></li>
+                <li><a href="#">All Products </a></li>
+                <!-- Login / Register -->
+                <div class="auth auth-menu">
+                    <span><a href="/pages/login.html" style="text-decoration: none; color: black;">Login</a></span>
+                    <span class="divider">/</span>
+                    <span>Register</span>
+                </div>
+            </ul>
+
+            <div style="display: flex; gap: 30px;">
+                <!-- cart icon -->
+                <div class="nav-cart" id="cart-button">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>0</span>
+                </div>
+
+                <!-- Login / Register -->
+                <div class="auth">
+                    <span><a href="/pages/login.html" style="text-decoration: none; color: black;">Login</a></span>
+                    <span class="divider">/</span>
+                    <span>Register</span>
+                </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+
+        </nav>
+        <div class="cart-details" id="cart-details">
+            <div class="top-cart-details">
+                <h1>Your Cart</h1>
+                <i class="fa-solid fa-x" id="cart-close"></i>
+            </div>
+            <div class="carts-product">
+                <p>Your cart is empty</p>
             </div>
         </div>
-
-        <!-- Mobile menu button -->
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-    </nav>
+    </section>
 
 
     <!-- ====== Hero Section ====== -->
@@ -311,8 +327,8 @@
     <!-- copyright -->
     <div class="copyright">
         <p>Copyright © 2024 Dine Market</p>
-        <p>Design by: <b>M Mughees Javed</b></p>
-        <p>Code by: <b>M Mughees Javed</b></p>
+        <p>Design by: <b>Amjad</b></p>
+        <p>Code by: <b>Amjad</b></p>
     </div>
 
 
@@ -331,7 +347,7 @@
                 pauseOnHover: true,
                 pauseOnFocus: true,
                 breakpoints: {
-                    1024: { perPage: 2 , gap:30},
+                    1024: { perPage: 2, gap: 30 },
                     640: { perPage: 1, gap: 10 },
                 }
             }).mount();
