@@ -13,18 +13,6 @@ body {
 
 /* ================= TOP HEADER ================= */
 
-.top-header {
-    height: 130px;
-    background: #eee;
-
-    border-top: 7px solid #b40065;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 15px 8%;
-}
 
 
 /* LOGO */
@@ -510,95 +498,23 @@ footer {
         width: 100%;
     }
 
-    .nav-links {
-        padding: 15px;
 
-        flex-wrap: wrap;
-    }
 
-    .phone {
-        margin: 0;
-    }
-
-    .about-container {
-        grid-template-columns: 1fr;
-    }
+ 
 
     .about-image img {
         height: 350px;
     }
 
-    .contact-info {
-        flex-wrap: wrap;
-
-        gap: 25px;
-    }
-
-    footer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
 
-@media (max-width: 600px) {
 
-    .top-header {
-        flex-direction: column;
-
-        padding: 20px;
-    }
-
-    .search {
-        width: 100%;
-    }
-
-    .header-icons {
-        justify-content: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .phone {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .about-container,
-    .banners,
-    .bottom-promos {
-        width: 94%;
-    }
+    
 
     .banners {
         grid-template-columns: 1fr;
     }
 
-    .bottom-promos {
-        grid-template-columns: 1fr;
     }
 
-    .contact-info {
-        width: 94%;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-    footer {
-        width: 94%;
-
-        grid-template-columns: 1fr;
-    }
-
-    .copyright {
-        flex-direction: column;
-
-        gap: 8px;
-
-        text-align: center;
-    }
 }
