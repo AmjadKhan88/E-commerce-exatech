@@ -18,6 +18,7 @@ function renderDetail(p) {
   container.innerHTML = `
     <div class="detail-wrapper">
     <div class="left-side">
+    <a href="/index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Products</a>
     <div class="image-card">
       <img src="${p.image}" alt="${p.title}" class="detail-img">
       </div>

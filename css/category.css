@@ -113,6 +113,10 @@
   margin: 0 auto;
 }
 
+.back-link{
+  margin-left: 100px;
+}
+
 .image-card{
 background-color: rgb(216, 220, 224);
  margin: 40px auto;
