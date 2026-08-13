@@ -47,3 +47,15 @@
     });
 })();
 
+const cartDetails = document.getElementById("cart-details");
+const cartButton = document.getElementById("cart-button");
+const cartClose = document.getElementById("cart-close");
+
+cartButton.addEventListener("click",()=> {
+    cartDetails.classList.toggle("open");
+})
+
+cartClose.addEventListener("click",()=> {
+    cartDetails.classList.toggle("open");
+})
+
