@@ -298,9 +298,7 @@
 
 .payment {
     border: 1px solid #31aebd;
-
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
