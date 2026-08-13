@@ -6,7 +6,7 @@ async function getProductsByCategory(category) {
 }
 
 function renderCards(products) {
-  const container = document.querySelector(".female-card");
+  const container = document.querySelector(".content-card");
   container.innerHTML = products.map(p => `
     <a class="card-link" href="detail.html?id=${p.id}" style="text-decoration: none;">
     <div class="card">
