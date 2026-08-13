@@ -19,19 +19,19 @@
   flex-direction: column;
   overflow: hidden;
   margin: 0 auto;
-  
+  transition-duration: 0.3s;
   
 }
 
 .content-card .card:hover {
-  transform: translatex(1.1px);
+  scale: 1.1;
   cursor: pointer;
   
 }
 
 .content-card .card img {
-  width: 100%;
-  height: 75%;
+  width: auto;
+  height: 250px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px ;
   object-fit: cover;
@@ -241,12 +241,65 @@ line-height: 1.75rem;
 
 
 
+@media (max-width: 1024px) {
+  .detail-wrapper{
+    gap: 1.5rem;
+  }
+}
+ 
+/* Stack into a single column */
 @media (max-width: 768px) {
   .detail-wrapper {
     grid-template-columns: 1fr;
   }
+ 
+  .image-card{
+    max-width: 100%;
+  }
+ 
   .detail-wrapper .detail-img {
+    max-width: 100%;
     width: 100%;
     padding: 10px 20px;
+    box-sizing: border-box;
+  }
+ 
+  .detail-wrapper .detail-info{
+    margin-top: 20px;
+  }
+}
+ 
+/* Small phones */
+@media (max-width: 480px) {
+  .detail-wrapper{
+    padding: 0 0.75rem;
+    gap: 1rem;
+  }
+ 
+  .back-link{
+    font-size: 0.9rem;
+  }
+ 
+  .image-card{
+    padding: 10px;
+    margin: 15px auto;
+  }
+ 
+  .thumbnail-img{
+    width: 70px;
+    height: 70px;
+  }
+ 
+  .detail-info .p-price{
+    padding: 12px 0px;
+  }
+ 
+  .detail-info .add-to-cart{
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+ 
+  .product-features{
+    padding: 0.75rem;
   }
 }
