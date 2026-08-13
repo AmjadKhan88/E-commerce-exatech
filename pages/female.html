@@ -10,50 +10,71 @@
 
 </head>
 <body>
-    <!-- ====== NAVBAR ====== -->
-     <nav class="navbar" role="navigation" aria-label="Main navigation">
+       <!-- ====== NAVBAR ====== -->
+    <section class="navabr-section">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
 
-        <!-- Logo -->
-        <div class="brand">
-            <i class="fa-solid fa-o"></i>
-            Dine Market
-        </div>
-
-        <!-- Nav Links -->
-        <ul class="nav-links" id="navLinks">
-            <li>Female</li>
-            <li>Male</li>
-            <li>Kids</li>
-            <li>All Products</li>
-        </ul>
-
-        <div style="display: flex; gap: 30px;">
-            <!-- cart icon -->
-            <div class="nav-cart">
-                <i class="fa-solid fa-cart-plus"></i>
-                <span>0</span>
+            <!-- Logo -->
+            <div class="brand">
+                <i class="fa-solid fa-o"></i>
+                Dine Market
             </div>
 
-            <!-- Login / Register -->
-            <div class="auth">
-                <span>Login</span>
-                <span class="divider">/</span>
-                <span>Register</span>
+            <!-- Nav Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/pages/female.html">Female</a></li>
+                <li><a href="/pages/male.html">Male </a></li>
+                <li><a href="/pages/kids.html">Kids </a></li>
+                <li><a href="/pages/products.html">All Products </a></li>
+                <!-- Login / Register -->
+                <div class="auth auth-menu" style="margin-top: 30px;">
+                    <span><a href="/pages/login.html" style="text-decoration: none; color: black;">Login</a></span>
+                    <span class="divider">/</span>
+                    <span>Register</span>
+                </div>
+            </ul>
+
+            <div style="display: flex; gap: 30px;">
+                <!-- cart icon -->
+                <div class="nav-cart" id="cart-button">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>0</span>
+                </div>
+
+                <!-- Login / Register -->
+                <div class="auth">
+                    <span><a href="/pages/login.html" style="text-decoration: none; color: black;">Login</a></span>
+                    <span class="divider">/</span>
+                    <span>Register</span>
+                </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+
+        </nav>
+        <div class="cart-details" id="cart-details">
+            <div class="top-cart-details">
+                <h1>Your Cart</h1>
+                <i class="fa-solid fa-x" id="cart-close"></i>
+            </div>
+            <div class="carts-product">
+                <p>Your cart is empty</p>
             </div>
         </div>
-
-        <!-- Mobile menu button -->
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-    </nav>
+    </section>
     <!-- female card section -->
     <section class="female-card">
         
     </section>
+
+    <!-- ====== FOOTER ====== -->
     <footer class="footer" style="margin-top: 200px;">
         <div class="footer-container">
 
@@ -76,11 +97,11 @@
             <div class="footer-col">
                 <h3 class="col-title">Company</h3>
                 <ul class="col-links">
-                    <li><a href="#">About</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
                     <li><a href="#">Terms of use</a></li>
                     <li><a href="#">Privacy policy</a></li>
                     <li><a href="#">How it works</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="/pages/contact.html">Contact us</a></li>
                 </ul>
             </div>
 
@@ -104,15 +125,17 @@
             </div>
 
         </div>
-    </footer>  
+    </footer>
     <hr>
-    
+
     <!-- copyright -->
-     <div class="copyright">
+    <div class="copyright">
         <p>Copyright © 2024 Dine Market</p>
-        <p>Design by: <b>M Mughees Javed</b></p>
-        <p>Code by: <b>M Mughees Javed</b></p>
-     </div>
+        <p>Design by: <b>Amjad</b></p>
+        <p>Code by: <b>Amjad</b></p>
+    </div>
+
+
     <script src="../js/script.js"></script>
     <script src="../js/female.js"></script>
 </body>
