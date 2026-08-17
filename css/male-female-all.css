@@ -1,0 +1,170 @@
+#main-container {
+  margin: 120px auto 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  row-gap: 60px;
+}
+
+#card {
+  height: fit-content;
+  padding: 16px 0 16px 0;
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+
+#card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#card * {
+  padding-bottom: 12px;
+}
+
+#card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(67, 66, 66, 0.932);
+}
+
+#card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(78, 77, 77, 0.779);
+}
+#card span {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(250, 42, 42, 0.751);
+}
+
+#card img {
+  max-width: 80%;
+  min-height: 245px;
+  max-height: 250px;
+}
+
+#card #image-div {
+  background-color: #d9d9d9dc;
+  border-radius: 25px 0 25px 0;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* ======= media query for DESKTOP ======  */
+
+@media (max-width: 1300px) {
+  #main-container {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 20px;
+  }
+
+  #card h3 {
+    font-size: 17px;
+  }
+
+  #card p {
+    font-size: 14px;
+  }
+
+  #card span {
+    font-size: 17px;
+  }
+}
+
+/* ======= media query for Laptop ======  */
+
+@media (max-width: 1000px) {
+  #main-container {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    row-gap: 30px;
+  }
+
+  #card h3 {
+    font-size: 17px;
+  }
+
+  #card p {
+    font-size: 14px;
+  }
+
+  #card span {
+    font-size: 17px;
+  }
+}
+
+/* ======= media query for Tablet ======  */
+
+@media (max-width: 767px) {
+  #main-container {
+    width: 92%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 35px;
+    margin-top: 100px;
+  }
+
+  #card {
+    padding: 8px;
+  }
+
+  #card #image-div {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #card h3 {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  #card p {
+    font-size: 13px;
+  }
+
+  #card span {
+    font-size: 15px;
+  }
+}
+
+/* ======= media query for mobile ======  */
+
+@media (max-width: 479px) {
+  #main-container {
+    width: 90%;
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+    row-gap: 30px;
+
+    margin-top: 90px;
+  }
+
+  #card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #card #image-div {
+    padding: 15px;
+  }
+
+  #card h3 {
+    font-size: 17px;
+  }
+
+  #card p {
+    font-size: 14px;
+  }
+
+  #card span {
+    font-size: 17px;
+  }
+}
